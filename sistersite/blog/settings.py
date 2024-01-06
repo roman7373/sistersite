@@ -1,0 +1,1 @@
+count_posts_page = 5
