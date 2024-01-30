@@ -1,0 +1,20 @@
+{% load static %}
+<link rel="stylesheet" href="{% static "css/main.css" %}">
+{% include "main.html" %} 
+<style>
+    .layer {
+        padding-left: 100px;
+    }
+</style>
+
+{% block content %}
+<body>
+<div class ='layer'>
+    <br>
+    <br>
+<p>Здесь пока ничего нет. Можно указать своих студентов-аспирантов, коллег по совместным проектам и т.д.</p>
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</div>
+</body>
+{% endblock %}     

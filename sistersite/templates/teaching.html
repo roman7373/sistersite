@@ -1,0 +1,28 @@
+{% load static %}
+<link rel="stylesheet" href="{% static "css/main.css" %}">
+{% include "main.html" %} 
+<style>
+    .layer {
+        padding-left: 100px;
+    }
+</style>
+
+{% block content %}
+<body>
+<div class ='layer'>
+    <br>
+<h3>TEACHING INTERESTS</h3>
+    <br>
+<p>Student feedback and drop-in sessions </p>
+<li>Tuesday 12:00-13:00 (Student consultation: online/in person)</li>
+<li>Thursday 12:00-13:00 (Student consultation: online/in person)</li>
+<li>Please email me to arrange a meeting at different times</li>
+<br>
+<p>I am a convener of the 3rd year Nature and Nurture of Mental Health module;</p>
+<p>I contribute to the 2nd year Developmental Psychology module;</p>
+<p>I supervise UG (Psychology) and PGT (Psychology, Data Science) research projects;</p>
+<p>I supervise a number of PhD students and accept new applications from prospective PhD candidates</p>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</div>
+</body>
+{% endblock %}   

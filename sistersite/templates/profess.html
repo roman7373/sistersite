@@ -1,0 +1,42 @@
+{% load static %}
+<link rel="stylesheet" href="{% static "css/main.css" %}">
+{% include "main.html" %} 
+<style>
+    .layer {
+        padding-left: 100px;
+    }
+</style>
+
+{% block content %}
+<body>
+<div class ='layer'>
+    <br>
+<h3>PROFESSIONAL ACTIVITIES</h3> 
+    <br>
+    <br>
+
+<p>INSTITUTIONAL REVIEW</p>
+<h5>MRC</h5>
+<p>1 Jan 2023</p>
+<p>Research funding review</p>
+    <br>
+    <br>
+
+<p>ADVISORY GROUP MEMBERSHIP</p>
+<h5>UCL Centre for Longitudinal Studies (CLS)</h5>
+<p>1 Jan 2019</p>
+<p>Invited Academic Member, External Advisory Board on lifelong mental health</p>
+    <br>
+    <br>
+
+    <p>ADVISORY GROUP MEMBERSHIP</p>
+    <h5>ESRC</h5>
+    <p>1 Jan 2015</p>
+    <p>Invited Academic Member</p>
+        <br>
+        <br>    
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</div>
+</body>
+{% endblock %}   

@@ -1,0 +1,21 @@
+{% load static %}
+<link rel="stylesheet" href="{% static "css/main.css" %}">
+{% include 'users/main2.html' %} 
+<style>
+    .layer {
+        padding-left: 100px;
+    }
+</style>
+{% block content %}
+<div class ='layer'>
+    <br>
+    <br>
+    <h3>Вы вышли из своей учетной записи</h3>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            <a href="{% url 'login' %}">Log in</a>
+        </small>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</div>
+{% endblock content %}
