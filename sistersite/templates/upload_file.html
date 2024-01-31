@@ -15,7 +15,7 @@
 
 {% block content %}
 <div class ='layer'>
-    
+    {% include "pagination.html"  %}    
     {% if user.is_staff %}
     <h4>Upload Files</h4>
 
@@ -34,7 +34,7 @@
         <br>
             <h6> {{ file.author }} </h6>
         <br>    
-        <a href = "{{ file.get_absolute_url }}">{{ file.abstract }}</a>
+        <a href = "{{ file.get_absolute_url }}">{{ file.abstract|truncatewords:71|linebreaks }}</a>
         <br>
         <br>    
             <h6>Publication date - {{ file.publish|date:"d E Y" }} </h6>
