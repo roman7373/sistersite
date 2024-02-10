@@ -11,8 +11,12 @@
 
 {% block content %}
 
-<div class ='layer'>
+<!--<div class ='layer'>-->
     <div class="content-section">
+        <br>
+        <br>
+        <br>
+        <br>
         <form method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
@@ -27,7 +31,8 @@
             <small class="text-muted">
                 Нужен аккаунт? <a class="ml-2" href="{% url 'register' %}">Регистрация</a>
             </small>
-        </div>
+        
+        <!--</div>-->
     </div>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </div>
